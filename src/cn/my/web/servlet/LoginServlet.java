@@ -52,7 +52,6 @@ public class LoginServlet extends HttpServlet {
         UserDao userDao = new UserDao();
         User user = userDao.login(loginUser);
 
-
         //5.判断user
         if (user == null) {
             //登录失败
